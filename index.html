@@ -4,24 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
     <div class="app">
         <div class="nav">
-            <div class="logo"></div>
+            <div class="brandmark"></div>
             <div class="nav-elements">
-                <div class="nav-head" id="content"></div>
-                <div class="nav-head" id="app-settings"></div>
+                <div class="nav-section" id="pages">
+                    <div class="nav-element" id="home">Home</div>
+                    <div class="nav-element" id="profile">Profile</div>
+                    <div class="nav-element" id="messages">Messages</div>
+                    <div class="nav-element" id="history">History</div>
+                    <div class="nav-element" id="tasks">Tasks</div>
+                    <div class="nav-element" id="communities">Communities</div>
+                </div>
+                <div class="nav-section" id="app">
+                    <div class="nav-element" id="settings">Settings</div>
+                    <div class="nav-element" id="support">Support</div>
+                    <div class="nav-element" id="privacy">Privacy</div>
+                </div>
             </div>
         </div>
         <div class="app-container">
-            <div class="header"></div>
-            <div class="content">
-                <div class="content-card"></div>
+            <div class="header">
+                <div class="h-nav-top">
+                    <div class="search-icon"></div>
+                    <div class="searchbar"></div>
+                    <div class="notifications"></div>
+                    <div class="user-profile" id="sm"></div>
+                    <div class="user-account"></div>
+                </div>
+                <div class="h-nav-bottom">
+                    <div class="user-profile" id="md"></div>
+                    <div class="intro">Hi There, Morgan Oakley</div>
+                    <div class="action-bar"></div>
+                </div>
             </div>
-            <div class="sidebar">
-                <div class="card" id="announcement"></div>
-                <div class="card" id="trending"></div>
+            
+            <div class="content">
+                <div class="projects">
+                    <h2>Your Projects</h2>
+                    <div class="card" id="content">
+                        <div class="statusbar"></div>
+                        <div class="card-title">Super Cool Project</div>
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et pariatur vitae dolorem magni aperiam dolorum similique deleniti modi ipsum earum recusandae aliquid dolore, ex inventore!</div>
+                        <div class="actions">
+                            <div class="icon" id="favorite"></div>
+                            <div class="icon" id="preview"></div>
+                            <div class="icon" id="share"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="announcements">
+                        <h2>Announcements</h2>
+                        <div class="card" id="announcement">
+                            <div class="announcement-element">
+                                <h3>Site Maintenance</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, nulla.</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="announcement-element">
+                                <h3>Community Share Day</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis eos quae excepturi dolorem. Perspiciatis quis eveniet atque minus blanditiis vero voluptatibus enim quia? Expedita!</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="announcement-element">
+                                <h3>Updated Privacy Policy</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, numquam, beatae reprehenderit reiciendis ab esse voluptatem itaque vero modi ipsum maxime quibusdam magni excepturi assumenda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending">
+                    <h2>Trending</h2>
+                    <div class="card" id="trending">
+                        <div class="trending-profile">
+                            <img src="" alt="">
+                            <h3>@tegan</h3> 
+                            <p>World Peace Builder</p>
+                        </div>
+                        <div class="trending-profile">
+                            <img src="" alt="">
+                            <h3>@morgan</h3> 
+                            <p>Super Cool Project</p>
+                        </div>
+                        <div class="trending-profile">
+                            <img src="" alt="">
+                            <h3>@kendall</h3> 
+                            <p>Life Changing App</p>
+                        </div>
+                        <div class="trending-profile">
+                            <img src="" alt="">
+                            <h3>@alex</h3> 
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
